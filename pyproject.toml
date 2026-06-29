@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sram_parasitic_toolkit"
+version = "0.3.0"
+authors = [{ name = "SRAM EDA Toolchain Expert" }]
+description = "Python toolkit for post-processing DSPF/SPF netlists in advanced SRAM design flows (TSMC N5/N7, FinFET/GAA)"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "eda-netlist-parser>=0.1.2",
+    "networkx>=3.0",
+    "pandas>=2.0",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.setuptools.packages.find]
+where = ["src"]

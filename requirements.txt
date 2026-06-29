@@ -1,0 +1,6 @@
+eda-netlist-parser>=0.1.2
+networkx>=3.0
+pandas>=2.0
+# Optional for future Dash integration
+# dash>=2.0
+# plotly>=5.0
